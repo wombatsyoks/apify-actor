@@ -1,0 +1,21 @@
+{
+    "actorSpecification": 1,
+    "name": "html-content-fetcher",
+    "title": "HTML Content Fetcher",
+    "description": "A simple API endpoint that fetches and returns the raw HTML content of any given URL. Perfect for web scraping, content analysis, or as a proxy for accessing web pages programmatically.",
+    "version": "1.0.0",
+    "meta": {
+        "templateId": "python-start"
+    },
+    "input": "input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "readme": "./README.md",
+    "categories": [
+        "TOOLS"
+    ],
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 300,
+        "memoryMbytes": 1024
+    }
+}

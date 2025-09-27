@@ -1,0 +1,38 @@
+{
+    "title": "HTML Content Fetcher Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "url": {
+            "title": "Target URL",
+            "type": "string",
+            "description": "The URL of the webpage from which to fetch HTML content",
+            "example": "https://example.com",
+            "editor": "textfield"
+        },
+        "timeout": {
+            "title": "Request Timeout",
+            "type": "integer",
+            "description": "Timeout for the HTTP request in seconds",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 300,
+            "editor": "number"
+        },
+        "follow_redirects": {
+            "title": "Follow Redirects",
+            "type": "boolean",
+            "description": "Whether to automatically follow HTTP redirects",
+            "default": true,
+            "editor": "checkbox"
+        },
+        "user_agent": {
+            "title": "User Agent",
+            "type": "string",
+            "description": "Custom User-Agent string to use for the request",
+            "default": "Mozilla/5.0 (compatible; ApifyBot/1.0)",
+            "editor": "textfield"
+        }
+    },
+    "required": ["url"]
+}

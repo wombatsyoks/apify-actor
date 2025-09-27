@@ -1,0 +1,40 @@
+# Apify ignore file - similar to .gitignore
+# Exclude unnecessary files from the actor build
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Test files
+test_imports.py
+*test*
+*Test*
+
+# Documentation (optional, but can be large)
+# README.md
+
+# Other
+*.log
+.env

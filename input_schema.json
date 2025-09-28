@@ -1,13 +1,13 @@
 {
-    "title": "HTML Content Fetcher Input",
+    "title": "HTML Content Fetcher & Price Extractor Input",
     "type": "object",
     "schemaVersion": 1,
     "properties": {
         "url": {
             "title": "Target URL",
             "type": "string",
-            "description": "The URL of the webpage from which to fetch HTML content",
-            "example": "https://example.com",
+            "description": "The URL of the webpage from which to fetch HTML content and extract price (if available)",
+            "example": "https://www.ebay.com/itm/example-item",
             "editor": "textfield"
         },
         "timeout": {

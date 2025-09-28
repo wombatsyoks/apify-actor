@@ -1,2 +1,4 @@
 apify
 httpx
+beautifulsoup4
+lxml
